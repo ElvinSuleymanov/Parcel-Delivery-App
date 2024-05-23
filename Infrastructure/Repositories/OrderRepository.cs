@@ -41,7 +41,7 @@ public class OrderRepository(ApplicationDbContext applicationDbContext) : IOrder
             .Select(o => new GetOrderDto { Products = o.ProductOrders.Select(x => x.Product).ToList(),Id = o.Id, Destination = o.Destination, UserId = o.UserId, Status = o.Status, CourierId = (int)o.CourierId})
             // .SelectMany(o => o.ProductOrders, (o, po) => new GetOrderDto { Products = po.Product,Id = o.Id, Destination = o.Destination, UserId = o.UserId, Status = o.Status, CourierId = (int)o.CourierId})
             .ToListAsync();
-            return ApiResponse<GetOrderResponse>.Success(new GetOrderResponse{Orders = Parcelsq});
+            return ApiResponse<GetOrderResponse>.Success(new GetOrderResponse{Orders = Parcels});
     }
     public async Task<ApiResponse<UpdateOrderResponse>> Update(UpdateOrderRequest request)
     {
