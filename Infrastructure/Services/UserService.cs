@@ -1,35 +1,28 @@
-﻿using Domain;
+﻿using Application;
+using Domain;
 using Models;
 
 namespace Infrastructure;
 
-public class UserService(IUnitOfWork uow) : IUserService
+public class UserService(IUserRepository userRepository, IUnitOfWork uow) : IUserService
 {
-    public IUnitOfWork UnitOfWork = uow;
-
-    public async Task<CreateOrderResponse> CreateOrder(CreateOrderRequest request)
+   private readonly IUserRepository _userRepository = userRepository;
+   public IUnitOfWork UnitOfWork = uow;
+    public async Task<ApiResponse<CreateUserResponse>> CreateUser(CreateUserRequest request)
     {
-       var result = await UnitOfWork.Orders.Create(request);
+      var result =   await _userRepository.Create(request);
        await UnitOfWork.SaveChangesAsync();
        return result;
     }
-
-    public async Task<CreateUserResponse> CreateUser(CreateUserRequest request)
+    public async Task<ApiResponse<GetUserResponse>> GetUser(GetUserRequest request)
     {
-       var result = await UnitOfWork.Users.Create(request);
-       await UnitOfWork.SaveChangesAsync();
-       return result;
-    }
-
-    public async Task<GetOrderResponse> GetOrder(GetOrderRequest request)
-    {
-        var result = await UnitOfWork.Orders.Get(request);
+        var result = await _userRepository.GetUser(request);
         return result;
     }
 
-    public async Task<LoginResponse> Login(LoginRequest request)
+    public async Task<ApiResponse<LoginResponse>> Login(LoginRequest request)
     {
-       var result = await UnitOfWork.Users.Login(request);
+       var result = await _userRepository.Login(request);
        return result;
     }
 }

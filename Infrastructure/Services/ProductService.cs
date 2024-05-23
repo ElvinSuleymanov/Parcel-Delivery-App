@@ -1,21 +1,22 @@
-﻿using Domain;
+﻿using Application;
 using Models;
 
 namespace Infrastructure;
 
-public class ProductService(IUnitOfWork uow) : IProductService
+public class ProductService(IUnitOfWork uow, IProductRepository productRepository) : IProductService
 {
     public IUnitOfWork UnitOfWork = uow;
-    public async Task<CreateProductResponse> CreateProduct(CreateProductRequest request)
+    private readonly IProductRepository ProductRepository = productRepository;
+    public async Task<ApiResponse<CreateProductResponse>> CreateProduct(CreateProductRequest request)
     {
-       var result = await UnitOfWork.Products.Create(request);
+       var result = await ProductRepository.Create(request);
        await UnitOfWork.SaveChangesAsync();
        return result;
     }
 
-    public async Task<GetProductResponse> GetProduct(GetProductRequest request)
+    public async Task<ApiResponse<GetProductResponse>> GetProduct(GetProductRequest request)
     {
-       var result = await UnitOfWork.Products.Get(request);
+       var result = await ProductRepository.Get(request);
        return result;
     }
 }

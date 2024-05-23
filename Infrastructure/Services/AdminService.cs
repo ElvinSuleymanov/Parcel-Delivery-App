@@ -1,24 +1,21 @@
-﻿using Domain;
+﻿using Application;
 using Models;
 
 namespace Infrastructure;
 
-public class AdminService(IUnitOfWork uow) : IAdminService
+public class AdminService(IUnitOfWork uow, IAdminRepository adminRepository) : IAdminService
 {
     public IUnitOfWork UnitOfWork { get; set; } = uow;
-
-    public Task<CreateOrderResponse> Assign(CreateOrderRequest request)
+    private readonly IAdminRepository _adminRepository = adminRepository;
+    public async Task<ApiResponse<LoginResponse>> Login(LoginRequest request)
     {
-        throw new NotImplementedException();
+      var result = await _adminRepository.Login(request);
+      return result;
     }
-
-    public Task<GetOrderResponse> GetOrder(GetOrderRequest request)
+    public async Task<ApiResponse<CreateAdminResponse>> Register(CreateAdminRequest request)
     {
-        throw new NotImplementedException();
-    }
-
-    public Task<UpdateOrderResponse> UpdateOrder(UpdateOrderRequest request)
-    {
-        throw new NotImplementedException();
+       var result = await _adminRepository.Register(request);
+       await uow.SaveChangesAsync();
+       return result;
     }
 }

@@ -7,6 +7,7 @@ public class Admin:Entity
     public byte[] Password {get;set;}   
     public byte[] Salt {get;set;} 
     public ICollection<Courier> Couriers {get;set;}
+    public ICollection<Order> Orders {get;set;}
     public int UserRoleId { get; set;} = (int)Roles.Admin;
 
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\API.csproj": {}
+    "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\API.csproj": {
+    "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\API.csproj",
+        "projectUniqueName": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\API.csproj",
+        "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Elvin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\obj\\",
+        "outputPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Elvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj"
+              "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj"
+              },
+              "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj"
               },
               "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Models\\Models.csproj": {
                 "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Models\\Models.csproj"
@@ -47,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -81,14 +88,14 @@
         }
       }
     },
-    "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
+    "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj",
-        "projectName": "Domain",
-        "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj",
+        "projectUniqueName": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Elvin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\obj\\",
+        "outputPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Elvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -140,14 +147,69 @@
         }
       }
     },
-    "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj": {
+    "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj",
-        "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Elvin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\obj\\",
+        "outputPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Elvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Elvin\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Elvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -164,8 +226,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj"
+              "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj": {
+                "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj"
+              },
+              "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Models\\Models.csproj"
               }
             }
           }
@@ -180,6 +248,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.5, )"
@@ -238,7 +310,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

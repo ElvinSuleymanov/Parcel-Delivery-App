@@ -1,4 +1,4 @@
-﻿using Domain;
+﻿using Application;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 
@@ -9,22 +9,21 @@ namespace API;
 public class UserController(IUserService userService)
 {
     public IUserService UserService { get; set; } = userService;
-
     [HttpPost]
     [Route("register")]
     public async Task<ApiResponse<CreateUserResponse>> Create([FromForm] CreateUserRequest request) {
         var result = await UserService.CreateUser(request);
-        return ApiResponse<CreateUserResponse>.Success(result);
+        return result;
     }
-    [Route("login")]
     [HttpPost]
+    [Route("login")]
     public async Task<ApiResponse<LoginResponse>> Login([FromForm] LoginRequest request) {
         var result = await UserService.Login(request);
-        return ApiResponse<LoginResponse>.Success(result);
+        return result;
     }
     [HttpGet]
-    public async Task<ApiResponse<GetOrderResponse>> Get([FromQuery] GetOrderRequest request) {
-        var result = await UserService.GetOrder(request);
-        return ApiResponse<GetOrderResponse>.Success(result);
+    public async Task<ApiResponse<GetUserResponse>> GetUser([FromQuery] GetUserRequest request) {
+        var result = await UserService.GetUser(request);
+        return result;
     }
 }

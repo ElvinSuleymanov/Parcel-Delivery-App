@@ -7,14 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\Admin\" />
-    <Folder Include="DTOs\Order\" />
-    <Folder Include="DTOs\User\" />
-    <Folder Include="Interfaces\UnitOfWork\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Models\Models.csproj" />
+    <Folder Include="Core\" />
   </ItemGroup>
 
 </Project>
