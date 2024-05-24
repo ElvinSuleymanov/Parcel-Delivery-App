@@ -39,11 +39,9 @@ namespace Infrastructure.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<byte[]>("Password")
-                        .IsRequired()
                         .HasColumnType("longblob");
 
                     b.Property<byte[]>("Salt")
-                        .IsRequired()
                         .HasColumnType("longblob");
 
                     b.Property<int>("UserRoleId")
@@ -52,6 +50,17 @@ namespace Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Admins");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Email = "cisco@gmail.com",
+                            FullName = "Werner",
+                            Password = new byte[] { 26, 199, 148, 171, 110, 156, 118, 89, 94, 219, 244, 52, 0, 110, 206, 51, 198, 36, 234, 112, 214, 212, 149, 143, 198, 232, 25, 22, 41, 111, 21, 206 },
+                            Salt = new byte[] { 131, 17, 182, 78, 156, 76, 249, 101, 37, 12, 35, 39, 232, 63, 26, 1, 53, 189, 34, 89, 19, 178, 115, 20, 100, 218, 200, 150, 221, 217, 224, 7 },
+                            UserRoleId = 30
+                        });
                 });
 
             modelBuilder.Entity("Domain.Courier", b =>
@@ -74,11 +83,9 @@ namespace Infrastructure.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<byte[]>("Password")
-                        .IsRequired()
                         .HasColumnType("longblob");
 
                     b.Property<byte[]>("Salt")
-                        .IsRequired()
                         .HasColumnType("longblob");
 
                     b.Property<int>("UserRoleId")
@@ -89,6 +96,18 @@ namespace Infrastructure.Migrations
                     b.HasIndex("AdminId");
 
                     b.ToTable("Couriers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AdminId = 1,
+                            Email = "cisco@gmail.com",
+                            FullName = "Werner",
+                            Password = new byte[] { 26, 199, 148, 171, 110, 156, 118, 89, 94, 219, 244, 52, 0, 110, 206, 51, 198, 36, 234, 112, 214, 212, 149, 143, 198, 232, 25, 22, 41, 111, 21, 206 },
+                            Salt = new byte[] { 131, 17, 182, 78, 156, 76, 249, 101, 37, 12, 35, 39, 232, 63, 26, 1, 53, 189, 34, 89, 19, 178, 115, 20, 100, 218, 200, 150, 221, 217, 224, 7 },
+                            UserRoleId = 20
+                        });
                 });
 
             modelBuilder.Entity("Domain.Order", b =>
@@ -99,7 +118,7 @@ namespace Infrastructure.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AdminId")
+                    b.Property<int?>("AdminId")
                         .HasColumnType("int");
 
                     b.Property<int?>("CourierId")
@@ -124,6 +143,26 @@ namespace Infrastructure.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Orders");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AdminId = 1,
+                            CourierId = 1,
+                            Destination = "Azadliq Avenue",
+                            Status = 10,
+                            UserId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AdminId = 1,
+                            CourierId = 1,
+                            Destination = "California, San Francisco",
+                            Status = 10,
+                            UserId = 1
+                        });
                 });
 
             modelBuilder.Entity("Domain.Product", b =>
@@ -141,6 +180,23 @@ namespace Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ProductName = "Macbook Air"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ProductName = "Asus rog strix"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ProductName = "RTX 4090"
+                        });
                 });
 
             modelBuilder.Entity("Domain.ProductOrder", b =>
@@ -164,6 +220,26 @@ namespace Infrastructure.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductOrders");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            OrderId = 1,
+                            ProductId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            OrderId = 1,
+                            ProductId = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            OrderId = 2,
+                            ProductId = 3
+                        });
                 });
 
             modelBuilder.Entity("Domain.User", b =>
@@ -179,11 +255,9 @@ namespace Infrastructure.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<byte[]>("Password")
-                        .IsRequired()
                         .HasColumnType("longblob");
 
                     b.Property<byte[]>("Salt")
-                        .IsRequired()
                         .HasColumnType("longblob");
 
                     b.Property<string>("UserName")
@@ -196,6 +270,17 @@ namespace Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Email = "cisco@gmail.com",
+                            Password = new byte[] { 26, 199, 148, 171, 110, 156, 118, 89, 94, 219, 244, 52, 0, 110, 206, 51, 198, 36, 234, 112, 214, 212, 149, 143, 198, 232, 25, 22, 41, 111, 21, 206 },
+                            Salt = new byte[] { 131, 17, 182, 78, 156, 76, 249, 101, 37, 12, 35, 39, 232, 63, 26, 1, 53, 189, 34, 89, 19, 178, 115, 20, 100, 218, 200, 150, 221, 217, 224, 7 },
+                            UserName = "Werner",
+                            UserRoleId = 10
+                        });
                 });
 
             modelBuilder.Entity("Domain.UserOrder", b =>
@@ -234,9 +319,7 @@ namespace Infrastructure.Migrations
                 {
                     b.HasOne("Domain.Admin", null)
                         .WithMany("Orders")
-                        .HasForeignKey("AdminId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("AdminId");
 
                     b.HasOne("Domain.Courier", null)
                         .WithMany("Orders")

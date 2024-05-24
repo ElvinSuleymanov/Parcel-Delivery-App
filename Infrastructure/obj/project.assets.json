@@ -2672,11 +2672,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Elvin\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Elvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2693,11 +2693,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj": {
-              "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj"
+            "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj"
             },
-            "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
-              "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj"
+            "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj"
             },
             "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Models\\Models.csproj": {
               "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Models\\Models.csproj"

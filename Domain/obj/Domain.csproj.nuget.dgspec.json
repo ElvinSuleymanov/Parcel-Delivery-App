@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {}
+    "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
+    "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Elvin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Elvin\\AppData\\Roaming\\NuGet\\NuGet.Config",

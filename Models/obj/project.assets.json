@@ -53,8 +53,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
-              "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj"
+            "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj"
             }
           }
         }

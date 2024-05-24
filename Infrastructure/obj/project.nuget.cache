@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SU2UwDmDXy1m3O0+ZmT8asdG06paAVir+GFSZQnAoGUA7OmozECRJbfIkRi2SNIYMOjQ0GTyg5iwfDbJU+RftQ==",
+  "dgSpecHash": "dz+b23Hjos1TfkPm9VKDEicsdAg8jRUETtDinsZllgGX0o/mZmx3MrKcDORWs1RxeEVqMgvsoZOgvsYVYyma4w==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Elvin\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Elvin\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.5\\microsoft.aspnetcore.authentication.jwtbearer.8.0.5.nupkg.sha512",

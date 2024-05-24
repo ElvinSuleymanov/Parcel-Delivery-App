@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\API.csproj": {}
+    "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\API.csproj": {
+    "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\API.csproj",
+        "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Elvin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\obj\\",
+        "outputPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Elvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
-                "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj"
+              "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj"
               },
-              "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj"
               },
               "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Models\\Models.csproj": {
                 "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Models\\Models.csproj"
@@ -88,14 +88,14 @@
         }
       }
     },
-    "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj": {
+    "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Elvin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\obj\\",
+        "outputPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Elvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -147,14 +147,14 @@
         }
       }
     },
-    "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
+    "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Elvin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Elvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -202,14 +202,14 @@
         }
       }
     },
-    "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Elvin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Elvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -226,11 +226,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj": {
-                "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj"
+              "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Application\\Application.csproj"
               },
-              "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
-                "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj"
+              "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj"
               },
               "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Models\\Models.csproj": {
                 "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Models\\Models.csproj"
@@ -311,8 +311,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
-                "projectPath": "c:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj"
+              "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Elvin\\Desktop\\Parcel-Delivery-App\\Domain\\Domain.csproj"
               }
             }
           }
